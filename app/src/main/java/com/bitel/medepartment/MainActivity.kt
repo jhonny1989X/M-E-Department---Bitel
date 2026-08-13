@@ -16,7 +16,7 @@ import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
 
 private const val FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLScsXzAX_GehgkmcrPBkfL2rIPFZ7CS9AuPd3J8mSwseKPSIPQ/viewform?usp=header"
-private const val API_URL = "PEGAR_URL_APPS_SCRIPT_AQUI"
+private const val API_URL = "https://script.google.com/macros/s/AKfycbzecluZ4sxdqml-jWQ2FXNlcExWKc3j4OA0pShY1Dkqn_SRbK2Z18u7pGXuTo6U-pUg/exec"
 class MainActivity : ComponentActivity() { override fun onCreate(s:Bundle?) { super.onCreate(s); setContent { MaterialTheme { DcApp { startActivity(Intent(Intent.ACTION_VIEW,Uri.parse(FORM_URL))) } } } } }
 data class Session(val username:String,val role:String,val meName:String="")
 data class Site(val site:String,val connection:String,val me:String,val completed:Boolean,val status:String)
